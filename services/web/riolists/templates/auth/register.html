@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  {% block title %}Register{% endblock %}
+{% endblock %}
+
+{% block content %}
+  <script type="text/javascript">
+    window.onload = function() {
+      const hours_offset = new Date().getTimezoneOffset()/60;
+      document.getElementById("hours_offset").value = hours_offset;
+    }
+  </script>
+  <form method="post" onload="get_hours_offset();">
+    <input type="hidden" name="hours_offset" id="hours_offset" value="0">
+    <center>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input name="username" id="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+      </div>
+      <input type="submit" value="Register">
+    </center>
+  </form>
+  <center>
+    <p><a href="{{ url_for('auth.login') }}">Login</a></p>
+  </center>
+{% endblock %}

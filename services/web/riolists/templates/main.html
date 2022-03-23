@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  {% block title %}Your list{% endblock %}
+{% endblock %}
+
+{% block content %}
+  {% if g.user %}
+    <div>
+      <form action="" method="POST">
+        <div class="form-group block_container">
+        <input type="hidden" name="action" value="item_add">
+          <div class="block">
+            <label>Item to add:</label>
+            <input type="text" name="text" maxlength="100" placeholder="Your text goes here...">
+          </div>
+          <div class="block">
+            <label>How much?</label>
+            <input type="number" name="amount" step="0.01" value=0>
+          </div>
+        </div>
+        <button type="submit">Add item</button>
+      </form>
+      <br>
+      <table>
+        <tr>
+          <th>datetime</th>
+          <th>text</th>
+          <th>amount</th>
+          <th>done?</th>
+        </tr>
+        {% for item in items %}
+          <tr>
+            <td>{{ item.get_date_created_with_offset().strftime("%Y-%m-%d %H:%M:%S") }}</td>
+            <td>{{ item.text }}</td>
+            <td>{{ item.amount }}</td>
+            <td>
+              <form action="" method="POST">
+                <input type="hidden" name="action" value="item_deactivate">
+                <input type="hidden" name="item_id" value={{ item.id }}>
+                <input type="hidden" name="user_id" value={{ item.user_id }}>
+                <button type="submit">=></button>
+              </form>
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% endif %}
+{% endblock content %}
