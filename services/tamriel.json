@@ -1,0 +1,69 @@
+[
+	{
+		"name": "Zurin Arctus",
+		"side": "Imperial Legion",
+		"birthday": "01.09.1986",
+		"strength": "70",
+		"motos": {
+			"1": "Время и место каждого Подвига определяется Судьбой. Но если не придёт Герой, не будет и Подвига.",
+			"2": "Победа в сражении – это самая незначительная победа. Победа без сражения – вот высочайшее мастерство.",
+			"3": "Сохранение своих сил – вот еще один ключ к победе. Демонстрация силы перед боем – это признак неопытности."
+		},
+		"story": "The first Imperial Battlemage and Grand Vizier of the Septim Empire during the late Second and early Third Era, as well as a former overseer of the Imperial City until the throne was taken by Talos Stormcrown. Zurin Arctus was known to be an astounding tactician as well as an accomplished diplomat and intellectual.His magical skill was unmatched by any other mage of his time, which may be attributed to his believed connections to Magnus, the god of magic."
+	},
+	{
+		"name": "Radd Hard-Heart",
+		"side": "Imperial Legion",
+		"birthday": "01.09.1971",
+		"strength": "81",
+		"motos": {
+			"1": "Мы должны доказать Данмерам Вварденфелла, что Имперский Легион первым найдет и уничтожит некромантов, где бы они не прятались!",
+			"2": "Данмеры Вварденфелла! Стойте за свои земли!"
+		},
+		"story": "Radd Hard-Heart is a Nord Master-at-Arms, who is the commander of the Imperial Legion at Moonmoth Legion Fort."
+	},
+	{
+		"name": "Larrius Varro",
+		"side": "Imperial Legion",
+		"birthday": "01.09.1956",
+		"strength": "49",
+		"motos": {
+			"1": "Меня называют героем войны. Я не герой. Я просто солдат, которому не хотелось умирать.",
+			"2": "Для меня дом — это кружка горячего эля в конце дня, и чтобы никто не дёргал."
+		},
+		"story": "Larrius Varro is an Imperial warrior residing at the Moonmoth Legion Fort. He dislikes the corruption that has taken root in Balmora."
+	},
+	{
+		"name": "Indoril Nerevar",
+		"side": "Tribunal Temple",
+		"birthday": "15.11.1956",
+		"strength": "50",
+		"motos": {
+			"1": "Мы можем остановиться, поднимаясь вверх, но никогда - спускаясь вниз.",
+			"2": "Битву выигрывает опытный и дисциплинированный. Войну же выигрывает талантливый."
+		},
+		"story": "A Chimer hero who lived during the First Era. He was a champion of Azura and the first Hortator, or war-leader/champion, of the unified Chimer and Dwemer, following the overthrowing of the Nordic Empire in Resdayn. However, after the discovery that the Dwemer were creating the Numidium, he led his people against them in the War of the First Council. Nerevar died at Red Mountain, though the exact cause is disputed. Later, he became a saint of the Dunmer's Tribunal Temple."
+	},
+	{
+		"name": "Vivec",
+		"side": "Tribunal Temple",
+		"birthday": "07.09.1856",
+		"strength": "100",
+		"motos": {
+			"1": "Мудрецу, который спрятал свое лучшее изречение, следует отсечь руки: ибо он – вор, и украл чужую мудрость",
+			"2": "Он не был рождён богом. Не судьба привела его к преступлению. Он выбрал дорогу по собственной воле."
+		},
+		"story": "Lord Vivec the Warrior-Poet was one of the three immortal god-kings of Morrowind alongside Sotha Sil and Almalexia. A pillar of the Tribunal Temple and the patron of artists and rogues, Vivec is the evolution of the Daedric Prince Mephala. Vivec is also seen as the invisible keeper of the holy land, always keeping a watchful eye over Morrowind, and keeping the evil god of Red Mountain at bay."
+	},
+	{
+		"name": "Ilen Faveran",
+		"side": "Guild of mages",
+		"birthday": "07.09.1256",
+		"strength": "87",
+		"motos": {
+			"1": "Солнце и луна сменяют день и ночь, но что сменит разум?",
+			"2": "Альмалексия всё знает и видит."
+		},
+		"story": "Ilen Faveran is a Dunmer enchanter who resides in the Balmora Temple. He is an Initiate-ranked member of the Tribunal Temple who offers services to the public."
+	}
+]

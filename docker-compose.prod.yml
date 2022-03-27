@@ -12,7 +12,7 @@ services:
     container_name: nginx
     build: ./services/nginx
     volumes:
-      - static_volume:/home/app/web/riolists/static
+      - static_volume:/home/app/web/tamriel/static
     ports:
       - "80:80"
       - "443:443"
