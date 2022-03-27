@@ -14,9 +14,9 @@ fi
 if [ "$FLASK_ENV" = "development" ]
 then
     echo "Creating the database tables..."
-    python manage.py create_db
+    #python manage.py create_db
     echo "Filling tables with ini data..."
-    python manage.py seed_db
+    #python manage.py seed_db
     echo "Tables created and filled."
 fi
 
