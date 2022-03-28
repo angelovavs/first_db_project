@@ -1,8 +1,5 @@
-from alchemy import Base, engine, Characters, Taglines, Stories, Battles
-from datetime import date
+from tamriel.alchemy import engine, Characters, Taglines, Stories, Battles
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.sql import text
-import random
 
 from pandas import read_json
 from datetime import datetime
@@ -47,7 +44,7 @@ with Session() as session:
         print(hero)
         print(hero.birthday)
 """
-tamriel_heroes = read_json('tamriel1.json', encoding='UTF-8')
+tamriel_heroes = read_json('../tamriel.json', encoding='UTF-8')
 
 class Fill_db:
     """Class to fill DataBase automatically (from json)"""

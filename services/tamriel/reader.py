@@ -1,5 +1,5 @@
 from sqlalchemy import inspect
-from alchemy import Base, engine
+from tamriel.alchemy import engine
 
 #conn = engine.connect()
 
