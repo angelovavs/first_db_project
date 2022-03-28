@@ -3,10 +3,10 @@ version: "3.8"
 services:
   web:
     container_name: python
-    build: ./services/
+    build: ./services/cli/
     command: python manage.py run -h 0.0.0.0
     volumes:
-      - ./services/:/usr/src/app/
+      - ./services/cli/:/usr/src/app/
     ports:
       - 5000:5000
     env_file:
