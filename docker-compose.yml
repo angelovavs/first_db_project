@@ -6,7 +6,7 @@ services:
     build: ./services/
     command: python manage.py run -h 0.0.0.0
     volumes:
-      - ./services/tamriel/:/usr/src/app/
+      - ./services/:/usr/src/app/
     ports:
       - 5000:5000
     env_file:
