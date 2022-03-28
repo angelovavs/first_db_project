@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo "Begin of entrypoint"
+
 if [ "$DATABASE" = "postgres" ]
 then
     echo "Waiting for postgres..."
