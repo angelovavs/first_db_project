@@ -1,5 +1,5 @@
 from flask.cli import FlaskGroup
-#from werkzeug.security import generate_password_hash
+from werkzeug.security import generate_password_hash
 
 from tamriel import alchemy
 
