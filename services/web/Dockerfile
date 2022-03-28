@@ -15,6 +15,7 @@ RUN pip install -r requirements.txt
 RUN ["/bin/bash", "-c", "echo before copy"]
 COPY . /usr/src/app/
 RUN ["/bin/bash", "-c", "echo after copy; ls -lh"]
+RUN ["/bin/bash", "-c", "chmod +x /usr/src/app/entrypoint.sh"]
 
 ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
 
