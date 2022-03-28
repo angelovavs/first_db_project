@@ -4,7 +4,7 @@ services:
   web:
     container_name: python
     build: ./services/web
-    #command: python manage.py run -h 0.0.0.0
+    command: python main.py run -h 0.0.0.0
     volumes:
       - ./services/web/:/usr/src/app/
     ports:
