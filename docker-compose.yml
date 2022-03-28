@@ -3,7 +3,7 @@ version: "3.8"
 services:
   web:
     container_name: python
-    build: ./services/cli/
+    build: ./services/cli
     command: python manage.py run -h 0.0.0.0
     volumes:
       - ./services/cli/:/usr/src/app/
