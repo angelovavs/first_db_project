@@ -5,6 +5,6 @@ from sqlalchemy import create_engine
 #from tamriel.alchemy import Base
 
 
-engine = create_engine('postgresql+psycopg2://angelova:angelova@localhost:5432/tamriel_db')
+engine = create_engine('postgresql+psycopg2://angelova:angelova@db:5432/tamriel_db')
 conn=engine.connect()
 print(conn)
