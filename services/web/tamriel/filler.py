@@ -1,5 +1,6 @@
 from tamriel.alchemy import engine, Characters, Taglines, Stories, Battles
 from sqlalchemy.orm import sessionmaker
+import os
 
 from pandas import read_json
 from datetime import datetime
@@ -44,7 +45,17 @@ with Session() as session:
         print(hero)
         print(hero.birthday)
 """
-tamriel_heroes = read_json('../tamriel.json', encoding='UTF-8')
+
+path = os.path.abspath('tamriel.json')
+path1 = os.path.normpath(path)
+
+
+print(path1)
+print(os.path.abspath(__file__))
+#basePath = os.path.dirname(os.path.abspath(__file__))
+#print(basePath+'\\tamriel.json')
+tamriel_heroes = read_json(path, encoding='UTF-8')
+print(tamriel_heroes)
 
 class Fill_db:
     """Class to fill DataBase automatically (from json)"""
